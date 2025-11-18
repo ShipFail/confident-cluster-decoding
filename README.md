@@ -4,6 +4,10 @@ Welcome to the official open‑source repository for **Confident‑Cluster Decod
 
 ![Confident-Cluster Decoding (CCD)](./docs/confident-cluster-decoding.webp)
 
+🔥 Announcement Blog Post:
+- [Confident-Cluster Decoding: A New Way to Make LLMs Less Random and More Trustworthy
+](https://wechaty.js.org/2025/11/17/confident-cluster-decoding/)
+
 This repository hosts:
 
 * the **research paper** (Quarto/LaTeX build system),
