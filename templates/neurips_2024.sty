@@ -1,0 +1,51 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{neurips_2024}[2024/01/01 NeurIPS 2024 paper style]
+
+\DeclareOption{preprint}{
+  \PassOptionsToPackage{numbers, compress}{natbib}
+}
+\DeclareOption{final}{
+  \PassOptionsToPackage{numbers, compress}{natbib}
+}
+\ProcessOptions\relax
+
+\RequirePackage{natbib}
+\RequirePackage{geometry}
+
+% Set page geometry
+\geometry{
+  paper=letterpaper,
+  top=1.0in,
+  bottom=1.0in,
+  left=1.0in,
+  right=1.0in
+}
+
+% Font settings
+\renewcommand{\rmdefault}{ptm}
+\renewcommand{\sfdefault}{phv}
+
+\newcommand{\And}{\end{tabular}\hskip 1em \begin{tabular}[t]{c}}
+\newcommand{\AND}{\end{tabular}\hskip 1em \newline\begin{tabular}[t]{c}}
+
+% Title formatting
+\makeatletter
+\def\@maketitle{%
+  \newpage
+  \null
+  \vskip 2em%
+  \begin{center}%
+  \let \footnote \thanks
+    {\LARGE \@title \par}%
+    \vskip 1.5em%
+    {\large
+      \lineskip .5em%
+      \begin{tabular}[t]{c}%
+        \@author
+      \end{tabular}\par}%
+    \vskip 1em%
+    %{\large \@date}%
+  \end{center}%
+  \par
+  \vskip 1.5em}
+\makeatother
