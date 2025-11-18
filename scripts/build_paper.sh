@@ -19,12 +19,12 @@ echo "Building PDF..."
 
 export TEXINPUTS=".:./templates:"
 
-pandoc ccd-paper.md \
+pandoc paper/confident-cluster-decoding.md \
   --from=markdown+tex_math_dollars+tex_math_single_backslash+citations \
   --template=templates/neurips_2024.tex \
   --bibliography=references.bib \
   --pdf-engine=xelatex \
-  --output=output/ccd-paper.pdf
+  --output=output/paper.pdf
 
 if [ $? -eq 0 ]; then
     echo "Success! PDF generated at output/ccd-paper.pdf"
