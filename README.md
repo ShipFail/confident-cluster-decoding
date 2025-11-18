@@ -1,5 +1,7 @@
 # Confident-Cluster Decoding (CCD)
 
+![Confident-Cluster Decoding (CCD)](./docs/confident-cluster-decoding.webp)
+
 Welcome to the official open‑source repository for **Confident‑Cluster Decoding (CCD)** — a new decoding paradigm designed for **reliable, deterministic, uncertainty‑aware, and hallucination‑resistant LLM agents**, with a special focus on **code generation**, **tool‑calling**, and **structured prediction**.
 
 This repository hosts:
